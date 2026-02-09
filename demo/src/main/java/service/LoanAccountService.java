@@ -2,8 +2,8 @@ package service;
 
 import integration.LoanAccountClient;
 import lombok.extern.slf4j.Slf4j;
-import model.LoanAccountEntity;
-import model.LoanAccountResponse;
+import com.example.demo.model.LoanAccountEntity;
+import com.example.demo.model.LoanAccountResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import repository.LoanAccountRepository;

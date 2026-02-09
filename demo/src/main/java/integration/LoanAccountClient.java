@@ -1,7 +1,7 @@
 package integration;
 
 import lombok.extern.slf4j.Slf4j;
-import model.LoanAccountResponse;
+import com.example.demo.model.LoanAccountResponse;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 

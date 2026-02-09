@@ -1,6 +1,6 @@
 package repository;
 
-import model.LoanAccountEntity;
+import com.example.demo.model.LoanAccountEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
