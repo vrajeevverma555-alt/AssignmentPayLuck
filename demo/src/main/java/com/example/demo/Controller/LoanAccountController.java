@@ -1,4 +1,4 @@
-package Controller;
+package com.example.demo.Controller;
 
 import lombok.extern.slf4j.Slf4j;
 import com.example.demo.model.LoanAccountResponse;
@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import service.LoanAccountService;
+import com.example.demo.service.LoanAccountService;
 
 @RestController
 @RequestMapping("/api/loan")
@@ -20,7 +20,7 @@ public class LoanAccountController {
     @GetMapping("/{loanAccountNumber}")
     public LoanAccountResponse getLoanDetails(
             @PathVariable String loanAccountNumber) {
-
+System.out.println("nnnnnnnnnnnnnn "+loanAccountNumber);
         log.info("Received request for loanAccountNumber={}", loanAccountNumber);
         return service.getLoanAccount(loanAccountNumber);
     }
