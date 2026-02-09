@@ -3,6 +3,8 @@ package model;
 import jakarta.persistence.*;
 import lombok.Data;
 
+import java.time.LocalDate;
+
 @Entity
 @Table(name = "loan_account")
 @Data
@@ -16,7 +18,7 @@ public class LoanAccountEntity {
     private String loanAccountNumber;
 
     @Column(name = "due_date")
-    private String dueDate;
+    private LocalDate dueDate;
 
     @Column(name = "emi_amount")
     private Integer emiAmount;
